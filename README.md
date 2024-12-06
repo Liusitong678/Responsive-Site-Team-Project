@@ -7,7 +7,7 @@ Responsive Site Team Project
   sunil: listen  
   prince: home   
 
-  our font:  
+  our font must be form google:  
   ```
   ---html---  
   <link
