@@ -1,65 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shop</title>
-    <link rel="stylesheet" href="shop.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Page</title>
+  <link rel="stylesheet" href="shop.css">
 </head>
 <body>
-    <header>
-        <div class="search">
-            <p>searching</p>
-            <button>sign in</button>
+  <header class="header">
+    <div class="logo">BEAT<span class="highlight">VIBES</span></div>
+    <nav class="nav">
+      <a href="#">Home</a>
+      <a href="shop.html" style="color:pink">Shop</a>
+      <a href="#">Listen</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="search">
+      <input type="text" placeholder="Start searching...">
+      <button>Search</button>
+    </div>
+  </header>
+
+  <div class="main-content">
+    <section class="products-section">
+      <h1>Products</h1>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="https://via.placeholder.com/200" alt="Product 1">
+          <div class="product-info">
+            <h3>Product Title Here</h3>
+            <p class="price">$789</p>
+            <div class="stars">★★★★★</div>
+            <div class="buttons">
+              <button>Add to Cart</button>
+              <button>Details</button>
+            </div>
+          </div>
         </div>
-        <nav>
-            <img src="" alt="BeatVibes">
-            <ul>
-                <li><a href="">home</a></li>
-                <li><a href="">shop</a></li>
-                <li><a href="">listen</a></li>
-                <li><a href="">contact us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="shop">shop</div>
-    <main>
-        <div class="right_part">
-            <h2>PRODUCTS</h2>
-            <div class="product_list">
-                <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                </ul>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/200" alt="Product 2">
+          <div class="product-info">
+            <h3>Product Title Here</h3>
+            <p class="price sale">$668</p>
+            <div class="stars">★★★★★</div>
+            <div class="buttons">
+              <button>Add to Cart</button>
+              <button>Details</button>
             </div>
+          </div>
         </div>
-        <div class="left_part">
-            <div class="shop_cart">
-                <h2>Shopping Cart</h2>
-                <p> Your Shopping Cart is Empty</p>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/200" alt="Product 3">
+          <div class="product-info">
+            <h3>Product Title Here</h3>
+            <p class="price">$557</p>
+            <div class="stars">★★★★★</div>
+            <div class="buttons">
+              <button>Add to Cart</button>
+              <button>Details</button>
             </div>
-            <div class="categories">
-                <h2>Products Categories</h2>
-                <ul>
-                    <li>T-shirts</li>
-                    <li>Bags</li>
-                    <li>Plugins</li>
-                </ul>
-            </div>
-            <div class="top_sales">
-                <h2>Top Sales</h2>
-                <ul>
-                    <li>Next Elections Resolutions could be</li>
-                    <li>Praesent adipiscing mi eget ipsum imperdiet</li>
-                    <li>Paul Thomson on Post with SoundCloud</li>
-                </ul>
-            </div>
+          </div>
         </div>
-    </main>
-    <footer>
-        <small>team group</small>
-    </footer>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/200" alt="Product 4">
+          <div class="product-info">
+            <h3>Product Title Here</h3>
+            <p class="price">$458</p>
+            <div class="stars">★★★★★</div>
+            <div class="buttons">
+              <button>Add to Cart</button>
+              <button>Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      <div class="shopping-cart">
+        <h3>Shopping Cart</h3>
+        <p>Your shopping cart is empty</p>
+      </div>
+      <div class="categories">
+        <h3>Products Categories</h3>
+        <ul>
+          <li>T-shirts (7)</li>
+          <li>Bags (11)</li>
+          <li>VST (10)</li>
+          <li>Plugins (94)</li>
+        </ul>
+      </div>
+      <div class="top-sales">
+        <h3>Top Sales</h3>
+        <ul>
+          <li>Next elections resolutions could be</li>
+          <li>Present adipiscing mi eget ipsum imperdiet</li>
+          <li>Paul Thompson on post with SoundCloud</li>
+        </ul>
+      </div>
+      <div class="tags">
+        <h3>Tags</h3>
+        <ul>
+          <li>T-shirt</li>
+          <li>Bag</li>
+          <li>Pro</li>
+          <li>Book</li>
+          <li>Sports</li>
+          <li>Premium</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2024 by Codexw. All Rights Reserved. Powered by Themeforest.</p>
+  </footer>
 </body>
 </html>
