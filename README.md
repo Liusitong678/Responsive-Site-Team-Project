@@ -21,7 +21,7 @@ Responsive Site Team Project
   ```
   ---css---  
    background: url(../image/pexels-sebastian-ervi-866902-1763075.jpg) no-repeat;
-   background-size: 100% 65%;
+   background-size: 100% 35%;
    background-color: #111;
   ```
   
