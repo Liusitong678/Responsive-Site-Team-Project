@@ -1,9 +1,12 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", serif; //use google font
     background-color: #111;
     color: white;
     padding-top: 70px;
+  }
+ :root {
+    --dark-pink: rgb(235, 97, 120);
   }
   
   a {
@@ -37,7 +40,7 @@ body {
   }
   
   .header .highlight {
-    color: pink;
+    color: var(--dark-pink);
   }
   
   .header .nav a {
