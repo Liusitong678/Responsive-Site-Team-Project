@@ -6,3 +6,22 @@ Responsive Site Team Project
   dharanya: login and contact pages  
   sunil: listen  
   prince: home   
+
+  our font:  
+  ```
+  ---html---  
+  <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+  ---css---
+  font-family: "Roboto", serif;
+  ```
+
+  I put the background img on the main branch, for background style:  
+  ```
+  ---css---  
+   background: url(../image/pexels-sebastian-ervi-866902-1763075.jpg) no-repeat;
+   background-size: 100% 65%;
+   background-color: #111;
+  ```
+  
