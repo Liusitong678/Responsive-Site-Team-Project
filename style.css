@@ -70,9 +70,11 @@ a {
   padding: 20px;
   color: #fff;
   cursor: pointer;
-  background: var(--bg-grey-dark);
   border-top-right-radius: 20px;
+  background: var(--bg-grey-dark);
   border-bottom-right-radius: 20px;
+  border: 1px solid var(--bg-grey-light);
+  border-left: none;
 }
 .header .search input {
   border: none;
@@ -83,10 +85,10 @@ a {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   background: var(--bg-grey-dark);
+  border: 1px solid var(--bg-grey-light);
 }
 
 /* Content */
-
 main {
   height: 100vh;
   background: var(--bg-grey-dark);
