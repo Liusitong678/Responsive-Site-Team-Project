@@ -17,7 +17,8 @@ body {
 
 :root {
   --dark-pink: #eb6178;
-  --bg-grey-dark: #292929;
+  --bg-grey-dark: #222;
+  --bg-grey-mid: #292929;
   --bg-grey-light: #585858;
 }
 .flex {
@@ -28,13 +29,15 @@ body {
 .f-col {
   flex-direction: column;
 }
+.f-sp-bt {
+  justify-content: space-between;
+}
 
 /* Header */
 .header {
   top: 0;
   left: 0;
   width: 100%;
-  opacity: 86%;
   padding: 14px;
   z-index: 1000;
   display: flex;
@@ -71,28 +74,81 @@ a {
   color: #fff;
   cursor: pointer;
   border-top-right-radius: 20px;
-  background: var(--bg-grey-dark);
+  background: var(--bg-grey-mid);
   border-bottom-right-radius: 20px;
   border: 1px solid var(--bg-grey-light);
   border-left: none;
 }
 .header .search input {
-    border: none;
-    outline: none;
-    padding: 14px;
-    color: #fff;
-    letter-spacing: 1px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    background: var(--bg-grey-dark);
-    border: 1px solid var(--bg-grey-light);
+  border: none;
+  outline: none;
+  padding: 14px;
+  color: #fff;
+  letter-spacing: 1px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background: var(--bg-grey-mid);
+  border: 1px solid var(--bg-grey-light);
+  border-right: none;
 }
 .header .search input::placeholder {
-    color: var(--bg-grey-light);
+  color: var(--bg-grey-light);
 }
 
 /* Content */
 main {
   height: 100vh;
-  background: var(--bg-grey-dark);
+  padding: 20px;
+  color: #fff;
+  background: var(--bg-grey-mid);
+}
+.section {
+  width: 100%;
+  margin-top: 75px;
+}
+.section .title {
+  margin: 20px 0;
+  font-size: 15px;
+}
+.musics {
+  gap: 20px;
+  overflow-x: scroll;
+  padding-bottom: 20px;
+  justify-content: flex-start;
+}
+.musics::-webkit-scrollbar {
+  height: 14px;
+  background: transparent;
+}
+.musics::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #eb617860;
+}
+.musics::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+  background: var(--dark-pink);
+}
+.card {
+  position: relative;
+}
+.card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  border: 1px solid #eb617860;
+}
+.card::after {
+  right: 10px;
+  bottom: 70px;
+  content: "▶";
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 50%;
+  position: absolute;
+  background: var(--dark-pink);
+}
+.album-title {
+  width: 200px;
+  margin-top: 6px;
+  color: #b3b3b3;
 }
