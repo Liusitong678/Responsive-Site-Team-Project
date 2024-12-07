@@ -25,7 +25,7 @@ Responsive Site Team Project
    background-color: #111;
   ```
 
-  Adding the link for fontawsome below : 
+  Adding the link for fontawsome below. Just add it to your html header tag.
 
 <link
       rel="stylesheet"
