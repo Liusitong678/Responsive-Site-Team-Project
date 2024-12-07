@@ -24,4 +24,10 @@ Responsive Site Team Project
    background-size: 100% 35%;
    background-color: #111;
   ```
-  
+
+  Adding the link for fontawsome below : 
+
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
