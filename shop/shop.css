@@ -82,7 +82,7 @@ a {
   padding: 8px 20px;
   font-size: 16px;
   color: #fff;
-  margin: 20px 60px;
+  margin: 20px 100px;
   background-color: #111;
   opacity: 80%;
   border-radius: 5px;
@@ -93,18 +93,19 @@ a {
   font-size: 20px;
   opacity: 80%;
   background-color: #222;
-  margin: 0 60px;
+  /* width:  */
+  margin: 0 30px 0 100px;
   border-radius: 10px 10px 0 0;
 }
 
 .product-grid {
   display: grid;
-  margin: 0 60px;
-  padding: 20px 30px;
+  margin: 0 30px 0 100px;
+  padding: 25px 40px;
   border-radius: 0 0 10px 10px;
   grid-template-columns: repeat(2, 1fr);
   background-color: #222;
-  background: linear-gradient(#2e2e2e, #111);
+  background: linear-gradient(#222, #111);
   gap: 20px;
   position: relative;
 }
@@ -148,10 +149,12 @@ a {
 /* Sidebar */
 .sidebar {
   flex: 1;
-  margin-left: 20px;
+  margin-right: 60px;
+  margin-top: 75px;
 }
 
 .sidebar div {
+  opacity: 80%;
   background-color: #222;
   padding: 15px;
   margin-bottom: 20px;
