@@ -33,10 +33,11 @@
             <p>Shop</p>
             <h2 class="product_title">Products</h2>
             <div class="product-grid">
+                <!-- Product 1 -->
                 <div class="product-card">
                     <img src="../image/pexels-daniel-morales-2147564134-29657657.jpg" alt="Product 1">
                     <div class="product-info">
-                        <h3>Rock Shirt</h3>
+                        <h3>Rock Shirt - Black Shirt</h3>
                         <p class="price">$789</p>
                         <div class="stars">★★★★★</div>
                         <div class="buttons">
@@ -45,10 +46,12 @@
                         </div>
                     </div>
                 </div>
+                <!-- Product 2 -->
                 <div class="product-card">
                     <img src="../image/pexels-daniel-duarte-270529097-29611387.jpg" alt="Product 2">
+                    <div class="sale-banner">Sale</div>
                     <div class="product-info">
-                        <h3>Rock Shirt</h3>
+                        <h3>Rock Leather Skirt</h3>
                         <p class="price sale">$668</p>
                         <div class="stars">★★★★★</div>
                         <div class="buttons">
@@ -57,10 +60,11 @@
                         </div>
                     </div>
                 </div>
+                <!-- Product 3 -->
                 <div class="product-card">
                     <img src="../image/pexels-eddson-lens-748406628-29660689.jpg" alt="Product 3">
                     <div class="product-info">
-                        <h3>Rock Shirt</h3>
+                        <h3>Rock Shirt - Printing</h3>
                         <p class="price">$557</p>
                         <div class="stars">★★★★★</div>
                         <div class="buttons">
@@ -69,10 +73,11 @@
                         </div>
                     </div>
                 </div>
+                <!-- Product 4 -->
                 <div class="product-card">
                     <img src="../image/pexels-fireworks-uche-324306978-29644655.jpg" alt="Product 4">
                     <div class="product-info">
-                        <h3>Rock Shirt</h3>
+                        <h3>Rock Pants</h3>
                         <p class="price">$458</p>
                         <div class="stars">★★★★★</div>
                         <div class="buttons">
@@ -91,20 +96,43 @@
             </div>
             <div class="categories">
                 <h3>Products Categories</h3>
-                <ul>
-                    <li>T-shirts (7)</li>
-                    <li>Bags (11)</li>
-                    <li>VST (10)</li>
-                    <li>Plugins (94)</li>
-                </ul>
+                <div class="category" onclick="toggleCategory('t-shirts')">
+                    <h4>T-shirts <span class="triangle-icon">&#9660;</span></h4>
+                    <div class="category-items" id="t-shirts">
+                        <ul>
+                            <li>Rock T-shirt</li>
+                            <li>Band T-shirt</li>
+                            <li>Music T-shirt</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="category" onclick="toggleCategory('bags')">
+                    <h4>Bags <span class="triangle-icon">&#9660;</span></h4>
+                    <div class="category-items" id="bags">
+                        <ul>
+                            <li>Leather Bag</li>
+                            <li>Canvas Bag</li>
+                            <li>Sport Bag</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="top-sales">
                 <h3>Top Sales</h3>
-                <ul>
-                    <li>Next elections resolutions could be</li>
-                    <li>Present adipiscing mi eget ipsum imperdiet</li>
-                    <li>Paul Thompson on post with SoundCloud</li>
-                </ul>
+                <div class="sales-item">
+                    <img src="../image/small-image1.jpg" alt="Sale Product 1">
+                    <div class="sales-info">
+                        <p>Leather Bag</p>
+                        <div class="stars">★★★★☆</div>
+                    </div>
+                </div>
+                <div class="sales-item">
+                    <img src="../image/small-image2.jpg" alt="Sale Product 2">
+                    <div class="sales-info">
+                        <p>Rock Shirt</p>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
             </div>
             <div class="tags">
                 <h3>Tags</h3>
@@ -123,6 +151,21 @@
     <footer class="footer">
         <p>&copy; 2024 </p>
     </footer>
+
+    <script>
+        function toggleCategory(categoryId) {
+            const category = document.getElementById(categoryId);
+            const icon = category.previousElementSibling.querySelector('.triangle-icon');
+            
+            if (category.style.display === '' || category.style.display === 'none') {
+                category.style.display = 'block'; 
+                icon.innerHTML = '&#9650;';
+            } else {
+                category.style.display = 'none'; 
+                icon.innerHTML = '&#9660;';
+            }
+        }
+    </script>
 </body>
 
 </html>
