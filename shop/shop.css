@@ -1,8 +1,9 @@
 /* General Styles */
-*{
+* {
   padding: 0;
   margin: 0;
 }
+
 body {
   font-family: "Roboto", serif;
   color: white;
@@ -11,9 +12,11 @@ body {
   background-size: 100% 35%;
   background-color: #111;
 }
+
 :root {
   --dark-pink: rgb(235, 97, 120);
 }
+
 a {
   text-decoration: none;
   color: white;
@@ -22,18 +25,19 @@ a {
 /* Header */
 .header {
   position: fixed;
-  top: 0; 
-  left: 0; 
-  width: 100%; 
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #222;
   padding: 20px;
-  z-index: 1000; 
+  z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   opacity: 86%;
 }
+
 .header nav {
   overflow: auto;
 }
@@ -91,7 +95,7 @@ a {
   border-radius: 5px;
 }
 
-.product_title{
+.product_title {
   padding: 25px;
   font-size: 20px;
   opacity: 80%;
@@ -148,12 +152,15 @@ a {
   cursor: pointer;
   border-radius: 3px;
 }
+
 .product-info h3 {
   margin: 10px 0;
 }
+
 .product-info .stars {
   margin-bottom: 10px;
 }
+
 /* Sale Banner */
 .sale-banner {
   position: absolute;
@@ -175,12 +182,13 @@ a {
   margin-top: 55px;
 }
 
-.sidebar h3, p {
+.sidebar h3,
+p {
   margin: 10px 0;
 }
 
 .sidebar div {
-  opacity: 80%;
+  opacity: 85%;
   background-color: #222;
   padding: 15px;
   margin-bottom: 16px;
@@ -198,18 +206,20 @@ a {
 
 .sidebar ul li {
   margin: 5px 0;
-  border-bottom: 1px solid #8f8f8f;
 }
+
 .sidebar ul li:hover {
   background-color: #111;
-  cursor:pointer;
+  cursor: pointer;
 }
+
 .categories .category {
   margin: 0;
   padding: 0;
   border-radius: 0;
   border-bottom: 1px solid #fff;
 }
+
 .categories .category h4 {
   font-size: 14px;
   padding: 5px;
@@ -217,7 +227,6 @@ a {
 
 .categories .category-items {
   display: none;
-  /* padding-left: 20px; */
   padding: 10px;
   margin: 0;
 }
@@ -234,11 +243,14 @@ a {
   font-size: 10px;
   color: var(--dark-pink);
 }
+
 /* Top Sales */
-.sales-item {
+.top-sales .sales-item {
   display: flex;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   align-items: center;
+  border-top: 1px solid #fff;
+  border-radius: 0;
 }
 
 .sales-item img {
@@ -247,38 +259,44 @@ a {
   margin-right: 15px;
 }
 
-.sales-info {
+.sales-item .sales-info {
   display: flex;
   flex-direction: column;
-}
-
-.sales-info p {
+  padding: 5px;
   margin: 0;
 }
 
-.sales-info .stars {
+.sales-item .sales-info p {
+  margin: 0;
+
+}
+
+.sales-item .sales-info .stars {
   color: gold;
   font-size: 14px;
+  padding: 5px;
+  margin: 0;
 }
+
 /* Sidebar - Tags */
 .tags ul {
   display: flex;
-  gap: 10px; 
-  flex-wrap: wrap; 
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .tags ul li {
-  background-color: var(--dark-pink); 
-  padding: 5px 10px; 
-  border-radius: 3px; 
-  color: white; 
-  font-size: 14px; 
+  background-color: var(--dark-pink);
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: white;
+  font-size: 14px;
   cursor: pointer;
-  transition: background-color 0.3s ease; 
+  transition: background-color 0.3s ease;
 }
 
 .tags ul li:hover {
-  background-color: #ff6490; 
+  background-color: #ff6490;
 }
 
 
@@ -295,14 +313,17 @@ a {
   .header {
     height: 80px;
   }
+
   .nav {
     position: absolute;
     bottom: 10px;
     left: 20%;
   }
+
   .products-section p {
     display: none;
   }
+
   /* Make everything stack vertically */
   .main-content {
     flex-direction: column;
@@ -315,7 +336,8 @@ a {
   }
 
   .product-grid {
-    grid-template-columns: 1fr; /* Make product grid a single column */
+    grid-template-columns: 1fr;
+    /* Make product grid a single column */
     margin: 0;
     padding: 20px;
   }

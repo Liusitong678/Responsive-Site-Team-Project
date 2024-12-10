@@ -41,7 +41,7 @@
                         <p class="price">$789</p>
                         <div class="stars">★★★★★</div>
                         <div class="buttons">
-                            <button>Add to Cart</button>
+                            <button><a href="#add">Add to Cart</a></button>
                             <button>Details</button>
                         </div>
                     </div>
@@ -55,7 +55,7 @@
                         <p class="price sale">$668</p>
                         <div class="stars">★★★★★</div>
                         <div class="buttons">
-                            <button>Add to Cart</button>
+                            <button><a href="#add">Add to Cart</a></button>
                             <button>Details</button>
                         </div>
                     </div>
@@ -68,7 +68,7 @@
                         <p class="price">$557</p>
                         <div class="stars">★★★★★</div>
                         <div class="buttons">
-                            <button>Add to Cart</button>
+                            <button><a href="#add">Add to Cart</a></button>
                             <button>Details</button>
                         </div>
                     </div>
@@ -81,7 +81,7 @@
                         <p class="price">$458</p>
                         <div class="stars">★★★★★</div>
                         <div class="buttons">
-                            <button>Add to Cart</button>
+                            <button><a href="#add">Add to Cart</a></button>
                             <button>Details</button>
                         </div>
                     </div>
@@ -91,6 +91,7 @@
 
         <aside class="sidebar">
             <div class="shopping-cart">
+                <a name="add"></a>
                 <h3>Shopping Cart</h3>
                 <p>Your shopping cart is empty</p>
             </div>
@@ -120,14 +121,14 @@
             <div class="top-sales">
                 <h3>Top Sales</h3>
                 <div class="sales-item">
-                    <img src="../image/small-image1.jpg" alt="Sale Product 1">
+                    <img src="../image/pexels-technobulka-2977304.jpg" alt="Sale Product 1">
                     <div class="sales-info">
                         <p>Leather Bag</p>
                         <div class="stars">★★★★☆</div>
                     </div>
                 </div>
                 <div class="sales-item">
-                    <img src="../image/small-image2.jpg" alt="Sale Product 2">
+                    <img src="../image/pexels-gabriel-marqui-455892064-29705816.jpg" alt="Sale Product 2">
                     <div class="sales-info">
                         <p>Rock Shirt</p>
                         <div class="stars">★★★★★</div>
@@ -149,19 +150,19 @@
     </div>
 
     <footer class="footer">
-        <p>&copy; 2024 </p>
+        <p>&copy; 2024 Group4</p>
     </footer>
 
     <script>
         function toggleCategory(categoryId) {
             const category = document.getElementById(categoryId);
             const icon = category.previousElementSibling.querySelector('.triangle-icon');
-            
+
             if (category.style.display === '' || category.style.display === 'none') {
-                category.style.display = 'block'; 
+                category.style.display = 'block';
                 icon.innerHTML = '&#9650;';
             } else {
-                category.style.display = 'none'; 
+                category.style.display = 'none';
                 icon.innerHTML = '&#9660;';
             }
         }
