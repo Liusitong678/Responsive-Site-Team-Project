@@ -324,7 +324,6 @@ p {
     display: none;
   }
 
-  /* Make everything stack vertically */
   .main-content {
     flex-direction: column;
     align-items: center;
@@ -337,12 +336,10 @@ p {
 
   .product-grid {
     grid-template-columns: 1fr;
-    /* Make product grid a single column */
     margin: 0;
     padding: 20px;
   }
 
-  /* Adjust category and sidebar items */
   .sidebar {
     width: 100%;
     margin: 20px;
@@ -369,7 +366,6 @@ p {
     margin-bottom: 10px;
   }
 
-  /* Adjust category and sidebar items */
   .category h4 {
     font-size: 18px;
     padding: 10px;
