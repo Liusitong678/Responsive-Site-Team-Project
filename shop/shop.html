@@ -1,119 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shop Page</title>
-  <link rel="stylesheet" href="shop.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Page</title>
+    <link rel="stylesheet" href="shop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-  <header class="header">
-    <div class="logo">BEAT<span class="highlight">VIBES</span></div>
-    <nav class="nav">
-      <a href="#">Home</a>
-      <a href="shop.html" style="color:pink">Shop</a>
-      <a href="#">Listen</a>
-      <a href="#">Contact</a>
-    </nav>
-    <div class="search">
-      <input type="text" placeholder="Start searching...">
-      <button>Search</button>
+    <header class="header">
+        <div class="logo">BEAT<span class="highlight">VIBES</span></div>
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="shop.html" style="color:rgb(235, 97, 120)">Shop</a>
+            <a href="#">Listen</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="Start searching...">
+            <button>Search</button>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <section class="products-section">
+            <p>Shop</p>
+            <h2 class="product_title">Products</h2>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <img src="../image/pexels-daniel-morales-2147564134-29657657.jpg" alt="Product 1">
+                    <div class="product-info">
+                        <h3>Rock Shirt - Black Shirt</h3>
+                        <p class="price">$789</p>
+                        <div class="stars">★★★★★</div>
+                        <div class="buttons">
+                            <button><a href="#add">Add to Cart</a></button>
+                            <button>Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <img src="../image/pexels-daniel-duarte-270529097-29611387.jpg" alt="Product 2">
+                    <div class="sale-banner">Sale</div>
+                    <div class="product-info">
+                        <h3>Rock Leather Skirt</h3>
+                        <p class="price sale">$668</p>
+                        <div class="stars">★★★★★</div>
+                        <div class="buttons">
+                            <button><a href="#add">Add to Cart</a></button>
+                            <button>Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <img src="../image/pexels-eddson-lens-748406628-29660689.jpg" alt="Product 3">
+                    <div class="product-info">
+                        <h3>Rock Shirt - Printing</h3>
+                        <p class="price">$557</p>
+                        <div class="stars">★★★★★</div>
+                        <div class="buttons">
+                            <button><a href="#add">Add to Cart</a></button>
+                            <button>Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <img src="../image/pexels-fireworks-uche-324306978-29644655.jpg" alt="Product 4">
+                    <div class="product-info">
+                        <h3>Rock Pants</h3>
+                        <p class="price">$458</p>
+                        <div class="stars">★★★★★</div>
+                        <div class="buttons">
+                            <button><a href="#add">Add to Cart</a></button>
+                            <button>Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <aside class="sidebar">
+            <div class="shopping-cart">
+                <a name="add"></a>
+                <h3>Shopping Cart</h3>
+                <p>Your shopping cart is empty</p>
+            </div>
+            <div class="categories">
+                <h3>Products Categories</h3>
+                <div class="category" onclick="toggleCategory('t-shirts')">
+                    <h4>T-shirts <span class="triangle-icon">&#9660;</span></h4>
+                    <div class="category-items" id="t-shirts">
+                        <ul>
+                            <li>Rock T-shirt</li>
+                            <li>Band T-shirt</li>
+                            <li>Music T-shirt</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="category" onclick="toggleCategory('bags')">
+                    <h4>Bags <span class="triangle-icon">&#9660;</span></h4>
+                    <div class="category-items" id="bags">
+                        <ul>
+                            <li>Leather Bag</li>
+                            <li>Canvas Bag</li>
+                            <li>Sport Bag</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="top-sales">
+                <h3>Top Sales</h3>
+                <div class="sales-item">
+                    <img src="../image/pexels-technobulka-2977304.jpg" alt="Sale Product 1">
+                    <div class="sales-info">
+                        <p>Leather Bag</p>
+                        <div class="stars">★★★★☆</div>
+                    </div>
+                </div>
+                <div class="sales-item">
+                    <img src="../image/pexels-gabriel-marqui-455892064-29705816.jpg" alt="Sale Product 2">
+                    <div class="sales-info">
+                        <p>Rock Shirt</p>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+            <div class="tags">
+                <h3>Tags</h3>
+                <ul>
+                    <li>T-shirt</li>
+                    <li>Bag</li>
+                    <li>Pro</li>
+                    <li>Book</li>
+                    <li>Sports</li>
+                    <li>Premium</li>
+                </ul>
+            </div>
+        </aside>
     </div>
-  </header>
 
-  <div class="main-content">
-    <section class="products-section">
-      <h1>Products</h1>
-      <div class="product-grid">
-        <div class="product-card">
-          <img src="https://via.placeholder.com/200" alt="Product 1">
-          <div class="product-info">
-            <h3>Product Title Here</h3>
-            <p class="price">$789</p>
-            <div class="stars">★★★★★</div>
-            <div class="buttons">
-              <button>Add to Cart</button>
-              <button>Details</button>
-            </div>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="https://via.placeholder.com/200" alt="Product 2">
-          <div class="product-info">
-            <h3>Product Title Here</h3>
-            <p class="price sale">$668</p>
-            <div class="stars">★★★★★</div>
-            <div class="buttons">
-              <button>Add to Cart</button>
-              <button>Details</button>
-            </div>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="https://via.placeholder.com/200" alt="Product 3">
-          <div class="product-info">
-            <h3>Product Title Here</h3>
-            <p class="price">$557</p>
-            <div class="stars">★★★★★</div>
-            <div class="buttons">
-              <button>Add to Cart</button>
-              <button>Details</button>
-            </div>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="https://via.placeholder.com/200" alt="Product 4">
-          <div class="product-info">
-            <h3>Product Title Here</h3>
-            <p class="price">$458</p>
-            <div class="stars">★★★★★</div>
-            <div class="buttons">
-              <button>Add to Cart</button>
-              <button>Details</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <footer class="footer">
+        <p>&copy; 2024 Group4</p>
+    </footer>
 
-    <aside class="sidebar">
-      <div class="shopping-cart">
-        <h3>Shopping Cart</h3>
-        <p>Your shopping cart is empty</p>
-      </div>
-      <div class="categories">
-        <h3>Products Categories</h3>
-        <ul>
-          <li>T-shirts (7)</li>
-          <li>Bags (11)</li>
-          <li>VST (10)</li>
-          <li>Plugins (94)</li>
-        </ul>
-      </div>
-      <div class="top-sales">
-        <h3>Top Sales</h3>
-        <ul>
-          <li>Next elections resolutions could be</li>
-          <li>Present adipiscing mi eget ipsum imperdiet</li>
-          <li>Paul Thompson on post with SoundCloud</li>
-        </ul>
-      </div>
-      <div class="tags">
-        <h3>Tags</h3>
-        <ul>
-          <li>T-shirt</li>
-          <li>Bag</li>
-          <li>Pro</li>
-          <li>Book</li>
-          <li>Sports</li>
-          <li>Premium</li>
-        </ul>
-      </div>
-    </aside>
-  </div>
+    <script>
+        function toggleCategory(categoryId) {
+            const category = document.getElementById(categoryId);
+            const icon = category.previousElementSibling.querySelector('.triangle-icon');
 
-  <footer class="footer">
-    <p>&copy; 2024 by Codexw. All Rights Reserved. Powered by Themeforest.</p>
-  </footer>
+            if (category.style.display === '' || category.style.display === 'none') {
+                category.style.display = 'block';
+                icon.innerHTML = '&#9650;';
+            } else {
+                category.style.display = 'none';
+                icon.innerHTML = '&#9660;';
+            }
+        }
+    </script>
 </body>
+
 </html>
