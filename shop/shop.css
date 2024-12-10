@@ -63,9 +63,15 @@ a {
 }
 
 .header .search button {
+  background-color: var(--dark-pink);
+  color: white;
   border: none;
-  background-color: #fff;
+  border-radius: 5px;
   padding: 6px 12px;
+}
+
+.search button:hover {
+  background-color: #c15eff;
 }
 
 .header .search input {

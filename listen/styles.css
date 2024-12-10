@@ -49,9 +49,15 @@
 }
 
 .header .search button {
+  background-color: var(--dark-pink);
+  color: white;
   border: none;
-  background-color: #fff;
+  border-radius: 5px;
   padding: 6px 12px;
+}
+
+.search button:hover {
+  background-color: #c15eff;
 }
 
 .header .search input {
@@ -258,16 +264,72 @@ body {
   background-color: #22ae1d;
 }
 
-/* Media Queries - Mobile (480px) */
+/* Media Query for Mobile View */
 @media screen and (max-width: 480px) {
+  /* Header Adjustments */
   .header {
-    height: 85px;
-    /* position: relative; */
+    height: 100px;
   }
+ 
   .nav {
     width: 100%;
     position: absolute;
     bottom: 0px;
     left: 10%;
+  }
+ 
+  .playlist-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+ 
+  .playlist-details {
+    width: 100%;
+    text-align: center;
+    border-right: none;
+    margin-bottom: 20px;
+  }
+ 
+  .playlist-cover {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto 15px;
+  }
+ 
+  .playlist-info h1 {
+    font-size: 24px;
+  }
+ 
+  .playlist-info p {
+    font-size: 16px;
+  }
+ 
+  .track-list {
+    width: 100%;
+    padding-left: 0;
+  }
+ 
+  .track-item {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+ 
+  .track-details h3 {
+    font-size: 18px;
+  }
+ 
+  .track-details p {
+    font-size: 14px;
+  }
+ 
+  .playback-controls {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+ 
+  .control-buttons button {
+    font-size: 20px;
   }
 }

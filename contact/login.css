@@ -3,7 +3,8 @@ body {
     margin: 0;
     font-family: "Roboto", serif;
     line-height: 1.6;
-    /* padding-top: 80px; */
+    color: #333;
+    background-color: #f4f4f9;
     background: url(../image/pexels-sebastian-ervi-866902-1763075.jpg) no-repeat;
     background-size: 100% 35%;
     background-color: #111;
@@ -16,6 +17,11 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+    transition: color 0.3s ease;
+}
+ 
+a:hover {
+    color: var(--dark-pink);
 }
  
 /* Header */
@@ -45,7 +51,7 @@ a {
 .nav a {
     margin: 0 15px;
     color: white;
-    transition: color 0.3s ease;
+    /* font-weight: bold; */
 }
  
 .nav a:hover {
@@ -87,23 +93,19 @@ a {
     align-items: center;
 }
  
-/* Contact Form Section */
-.contact-form-section {
-    max-width: 500px;
+/* Login Form Section */
+.login-form-section {
+    max-width: 400px;
     width: 100%;
     padding: 20px;
     background: linear-gradient(135deg, var(--dark-pink), #c15eff);
     color: white;
     border-radius: 10px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-}
- 
-.contact-form-section h2 {
     text-align: center;
-    margin-bottom: 20px;
 }
  
-.contact-form {
+.login-form {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -112,32 +114,43 @@ a {
 .field-container {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
 }
  
 .field-container label {
-    margin-bottom: 5px;
-    font-weight: bold;
     font-size: 1rem;
+    font-weight: bold;
 }
  
-.field-container input,
-.field-container textarea,
-.field-container select {
+.field-container input {
+    width: 90%;
     padding: 10px;
     font-size: 1rem;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
  
-.field-container textarea {
-    resize: none;
+.auth-links {
+    text-align: right;
+    margin-bottom: 10px;
+}
+ 
+.auth-links a {
+    font-size: 0.9rem;
+    color: white;
+    font-weight: bold;
+}
+ 
+.auth-links a:hover {
+    text-decoration: underline;
 }
  
 .btn-container {
     text-align: center;
 }
  
-.submit-btn {
+.sign-in-btn {
     padding: 10px 20px;
     background-color: white;
     color: var(--dark-pink);
@@ -149,9 +162,24 @@ a {
     transition: background 0.3s ease, color 0.3s ease;
 }
  
-.submit-btn:hover {
+.sign-in-btn:hover {
     background-color: var(--dark-pink);
     color: white;
+}
+ 
+.register {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: white;
+}
+ 
+.register a {
+    color: white;
+    font-weight: bold;
+}
+ 
+.register a:hover {
+    text-decoration: underline;
 }
  
 /* Image Section */
@@ -178,7 +206,7 @@ a {
 }
  
 /* Responsive Design */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .header {
         height: 80px;
     }
@@ -186,13 +214,11 @@ a {
     .nav {
     position: absolute;
     bottom: 10px;
-    left: 10%;
+    left: 5%;
+    width: 100%;
     }
     .main {
         flex-direction: column;
     }
- 
-    .nav a {
-        margin: 5px;
-    }
+
 }
