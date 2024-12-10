@@ -15,91 +15,91 @@
 
 <body>
     <header class="header">
-        <div class="logo">BEAT<span class="highlight">VIBES</span></div>
-        <nav class="nav">
-            <a href="#">Home</a>
-            <a href="shop.html" style="color:rgb(235, 97, 120)">Shop</a>
-            <a href="#">Listen</a>
-            <a href="../contact/contact.html">Contact</a>
+        <div class="logo" aria-label="Website logo">BEAT<span class="highlight">VIBES</span></div>
+        <nav class="nav" aria-label="Main navigation">
+            <a href="#" aria-label="Go to Home page">Home</a>
+            <a href="shop.html" style="color:rgb(235, 97, 120)" aria-current="page">Shop</a>
+            <a href="#" aria-label="Go to Listen page">Listen</a>
+            <a href="../contact/contact.html" aria-label="Go to Contact page">Contact</a>
         </nav>
-        <div class="search">
-            <input type="text" placeholder="Start searching...">
-            <button>Search</button>
+        <div class="search" aria-label="Search bar">
+            <input type="text" placeholder="Start searching..." aria-label="Search input">
+            <button aria-label="Search">Search</button>
         </div>
     </header>
 
     <div class="main-content">
-        <section class="products-section">
+        <section class="products-section" aria-labelledby="products-heading">
             <p>Shop</p>
-            <h2 class="product_title">Products</h2>
+            <h2 class="product_title" id="products-heading">Products</h2>
             <div class="product-grid">
                 <!-- Product 1 -->
-                <div class="product-card">
-                    <img src="../image/pexels-daniel-morales-2147564134-29657657.jpg" alt="Product 1">
+                <div class="product-card" aria-labelledby="product1-title">
+                    <img src="../image/pexels-daniel-morales-2147564134-29657657.jpg" alt="Rock Shirt - Black Shirt">
                     <div class="product-info">
-                        <h3>Rock Shirt - Black Shirt</h3>
+                        <h3 id="product1-title">Rock Shirt - Black Shirt</h3>
                         <p class="price">$789</p>
-                        <div class="stars">★★★★★</div>
+                        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
                         <div class="buttons">
-                            <button><a href="#add">Add to Cart</a></button>
-                            <button>Details</button>
+                            <button><a href="#add" aria-label="Add Rock Shirt - Black Shirt to cart">Add to
+                                    Cart</a></button>
+                            <button aria-label="View details about Rock Shirt - Black Shirt">Details</button>
                         </div>
                     </div>
                 </div>
                 <!-- Product 2 -->
-                <div class="product-card">
-                    <img src="../image/pexels-daniel-duarte-270529097-29611387.jpg" alt="Product 2">
-                    <div class="sale-banner">Sale</div>
+                <div class="product-card" aria-labelledby="product2-title">
+                    <img src="../image/pexels-daniel-duarte-270529097-29611387.jpg" alt="Rock Leather Skirt">
+                    <div class="sale-banner" aria-label="On Sale">Sale</div>
                     <div class="product-info">
-                        <h3>Rock Leather Skirt</h3>
+                        <h3 id="product2-title">Rock Leather Skirt</h3>
                         <p class="price sale">$668</p>
-                        <div class="stars">★★★★★</div>
+                        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
                         <div class="buttons">
-                            <button><a href="#add">Add to Cart</a></button>
-                            <button>Details</button>
+                            <button><a href="#add" aria-label="Add Rock Leather Skirt to cart">Add to Cart</a></button>
+                            <button aria-label="View details about Rock Leather Skirt">Details</button>
                         </div>
                     </div>
                 </div>
                 <!-- Product 3 -->
-                <div class="product-card">
-                    <img src="../image/pexels-eddson-lens-748406628-29660689.jpg" alt="Product 3">
+                <div class="product-card" aria-labelledby="product3-title">
+                    <img src="../image/pexels-eddson-lens-748406628-29660689.jpg" alt="Rock Shirt - Printing">
                     <div class="product-info">
-                        <h3>Rock Shirt - Printing</h3>
+                        <h3 id="product3-title">Rock Shirt - Printing</h3>
                         <p class="price">$557</p>
-                        <div class="stars">★★★★★</div>
+                        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
                         <div class="buttons">
-                            <button><a href="#add">Add to Cart</a></button>
-                            <button>Details</button>
+                            <button><a href="#add" aria-label="Add Rock Shirt - Printing to cart">Add to
+                                    Cart</a></button>
+                            <button aria-label="View details about Rock Shirt - Printing">Details</button>
                         </div>
                     </div>
                 </div>
                 <!-- Product 4 -->
-                <div class="product-card">
-                    <img src="../image/pexels-fireworks-uche-324306978-29644655.jpg" alt="Product 4">
+                <div class="product-card" aria-labelledby="product4-title">
+                    <img src="../image/pexels-fireworks-uche-324306978-29644655.jpg" alt="Rock Pants">
                     <div class="product-info">
-                        <h3>Rock Pants</h3>
+                        <h3 id="product4-title">Rock Pants</h3>
                         <p class="price">$458</p>
-                        <div class="stars">★★★★★</div>
+                        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
                         <div class="buttons">
-                            <button><a href="#add">Add to Cart</a></button>
-                            <button>Details</button>
+                            <button><a href="#add" aria-label="Add Rock Pants to cart">Add to Cart</a></button>
+                            <button aria-label="View details about Rock Pants">Details</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <aside class="sidebar">
-            <div class="shopping-cart">
-                <a name="add"></a>
-                <h3>Shopping Cart</h3>
+        <aside class="sidebar" aria-labelledby="sidebar-heading">
+            <div class="shopping-cart" aria-labelledby="cart-heading">
+                <h3 id="cart-heading">Shopping Cart</h3>
                 <p>Your shopping cart is empty</p>
             </div>
-            <div class="categories">
-                <h3>Products Categories</h3>
-                <div class="category" onclick="toggleCategory('t-shirts')">
+            <div class="categories" aria-labelledby="categories-heading">
+                <h3 id="categories-heading">Products Categories</h3>
+                <div class="category" onclick="toggleCategory('t-shirts')" aria-expanded="false">
                     <h4>T-shirts <span class="triangle-icon">&#9660;</span></h4>
-                    <div class="category-items" id="t-shirts">
+                    <div class="category-items" id="t-shirts" aria-hidden="true">
                         <ul>
                             <li>Rock T-shirt</li>
                             <li>Band T-shirt</li>
@@ -107,9 +107,9 @@
                         </ul>
                     </div>
                 </div>
-                <div class="category" onclick="toggleCategory('bags')">
+                <div class="category" onclick="toggleCategory('bags')" aria-expanded="false">
                     <h4>Bags <span class="triangle-icon">&#9660;</span></h4>
-                    <div class="category-items" id="bags">
+                    <div class="category-items" id="bags" aria-hidden="true">
                         <ul>
                             <li>Leather Bag</li>
                             <li>Canvas Bag</li>
@@ -118,25 +118,25 @@
                     </div>
                 </div>
             </div>
-            <div class="top-sales">
-                <h3>Top Sales</h3>
+            <div class="top-sales" aria-labelledby="top-sales-heading">
+                <h3 id="top-sales-heading">Top Sales</h3>
                 <div class="sales-item">
-                    <img src="../image/pexels-technobulka-2977304.jpg" alt="Sale Product 1">
+                    <img src="../image/pexels-technobulka-2977304.jpg" alt="Leather Bag">
                     <div class="sales-info">
                         <p>Leather Bag</p>
-                        <div class="stars">★★★★☆</div>
+                        <div class="stars" aria-label="4 out of 5 stars">★★★★☆</div>
                     </div>
                 </div>
                 <div class="sales-item">
-                    <img src="../image/pexels-gabriel-marqui-455892064-29705816.jpg" alt="Sale Product 2">
+                    <img src="../image/pexels-gabriel-marqui-455892064-29705816.jpg" alt="Rock Shirt">
                     <div class="sales-info">
                         <p>Rock Shirt</p>
-                        <div class="stars">★★★★★</div>
+                        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
                     </div>
                 </div>
             </div>
-            <div class="tags">
-                <h3>Tags</h3>
+            <div class="tags" aria-labelledby="tags-heading">
+                <h3 id="tags-heading">Tags</h3>
                 <ul>
                     <li>T-shirt</li>
                     <li>Bag</li>
@@ -149,7 +149,7 @@
         </aside>
     </div>
 
-    <footer class="footer">
+    <footer class="footer" aria-label="Footer">
         <p>&copy; 2024 Group4 Sitong Liu</p>
     </footer>
 
