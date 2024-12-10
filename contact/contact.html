@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./navbar/navbar.css">
 </head>
@@ -29,12 +33,36 @@
             <h2>Contact Us</h2>
             <form class="contact-form">
                 <div class="field-container">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" required>
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname" required>
+                </div>
+                <div class="field-container">
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lastname" required>
                 </div>
                 <div class="field-container">
                     <label for="email">Email:</label>
                     <input type="email" id="email" required>
+                </div>
+                <div class="field-container">
+                    <label for="phonenumber">Phone Number:</label>
+                    <input type="number" id="phonenumber" required>
+                </div>
+                <div class="field-container">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" required>
+                </div>
+                <div class="field-container">
+                    <label for="address">Address:</label>
+                    <textarea id="address" rows="2" required></textarea>
+                </div>
+                <div class="field-container">
+                    <label for="contactmethod">Preferred Contact Method:</label>
+                    <select id="contactmethod" required>
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                        <option value="none">None</option>
+                    </select>
                 </div>
                 <div class="field-container">
                     <label for="message">Message:</label>
@@ -49,6 +77,7 @@
             <img src="./images/pexels-vishnurnair-1105666.jpg" alt="Music-page">
         </section>
     </main>
+ 
 
     <footer class="footer">
         <p>&copy; 2024 Dharanya...</p>
