@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,26 +13,26 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./navbar/navbar.css">
 </head>
+
 <body>
-    <header class="header">
-        <div class="logo">BEAT<span class="highlight">VIBES</span></div>
-        <nav class="nav">
-            <a href="../home/home.html">Home</a>
-            <a href="../shop/shop.html">Shop</a>
-            <a href="../listen/index.html">Listen</a>
-            <a href="contact.html" style="color:rgb(235, 97, 120)">Contact</a>
-            <a href="./index.html">Login</a>
+    <header class="header" role="banner">
+        <div class="logo" role="heading" aria-level="1">BEAT<span class="highlight">VIBES</span></div>
+        <nav class="nav" role="navigation">
+            <a href="../home/home.html" role="link">Home</a>
+            <a href="../shop/shop.html" role="link">Shop</a>
+            <a href="../listen/index.html" role="link">Listen</a>
+            <a href="contact.html" style="color:rgb(235, 97, 120)" role="link" aria-current="page">Contact</a>
+            <a href="./index.html" role="link">Login</a>
         </nav>
-        <div class="search">
-            <input type="text" placeholder="Start searching...">
-            <button>Search</button>
+        <div class="search" role="search">
+            <input type="text" placeholder="Start searching..." aria-label="Search input">
+            <button aria-label="Search button">Search</button>
         </div>
     </header>
-
-    <main class="main">
-        <section class="contact-form-section">
-            <h2>Contact Us</h2>
-            <form class="contact-form">
+    <main class="main" role="main">
+        <section class="contact-form-section" aria-labelledby="contact-form">
+            <h2 id="contact-form">Contact Us</h2>
+            <form class="contact-form" aria-labelledby="contact-form">
                 <div class="field-container">
                     <label for="firstname">First Name:</label>
                     <input type="text" id="firstname" required>
@@ -73,14 +74,13 @@
                 </div>
             </form>
         </section>
-        <section class="tech-img-section">
+        <section class="tech-img-section" aria-hidden="true">
             <img src="./images/pexels-vishnurnair-1105666.jpg" alt="Music-page">
         </section>
     </main>
- 
-
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <p>&copy; 2024 Dharanya...</p>
     </footer>
 </body>
+
 </html>

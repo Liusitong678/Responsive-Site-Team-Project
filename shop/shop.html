@@ -13,7 +13,7 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body onload="initMap()">
     <header class="header">
         <div class="logo" aria-label="Website logo">BEAT<span class="highlight">VIBES</span></div>
         <nav class="nav" aria-label="Main navigation">
@@ -147,13 +147,18 @@
                     <li>Premium</li>
                 </ul>
             </div>
+            <div class="map-part" aria-labelledby="map-heading">
+                <h3 id="map-heading">map</h3>
+                <img src="../image/map.jpg" alt="map">
+                <div id="map"></div>
+            </div>
         </aside>
     </div>
 
     <footer class="footer" aria-label="Footer">
         <p>&copy; 2024 Group4 Sitong Liu</p>
     </footer>
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgV-EXAMPLEKEY1234567890"></script>
     <script>
         function toggleCategory(categoryId) {
             const category = document.getElementById(categoryId);
@@ -166,6 +171,13 @@
                 category.style.display = 'none';
                 icon.innerHTML = '&#9660;';
             }
+        }
+        function initMap() {
+            const mapOptions = {
+                center: { lat: 43.6532, lng: -79.3832 }, // Toronto coordinates
+                zoom: 12,
+            };
+            const map = new google.maps.Map(document.getElementById("map"), mapOptions);
         }
     </script>
 </body>

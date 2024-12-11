@@ -7,22 +7,28 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="logo">BEAT<span class="highlight">VIBES</span></div>
-      <nav class="nav">
+    <header class="header" role="banner">
+      <div class="logo" role="img" aria-label="BEATVIBES Logo">
+        BEAT<span class="highlight">VIBES</span>
+      </div>
+      <nav class="nav" role="navigation" aria-label="Main navigation">
         <a href="../home/home.html">Home</a>
         <a href="../shop/shop.html">Shop</a>
         <a href="listen.html" style="color: rgb(235, 97, 120)">Listen</a>
         <a href="../contact/contact.html">Contact</a>
         <a href="../contact/index.html">Login</a>
       </nav>
-      <div class="search">
-        <input type="text" placeholder="Start searching..." />
-        <button>Search</button>
+      <div class="search" role="search">
+        <input
+          type="text"
+          placeholder="Start searching..."
+          aria-label="Search"
+        />
+        <button aria-label="Search button">Search</button>
       </div>
     </header>
-    <div class="playlist-container">
-      <div class="playlist-details">
+    <div class="playlist-container" role="main">
+      <div class="playlist-details" role="region" aria-label="Playlist Details">
         <img
           src="pexels-theshuttervision-15447298.jpg"
           alt="Playlist Cover"
@@ -33,11 +39,11 @@
           <p>The hottest tracks to keep you vibing</p>
           <p>42 tracks • Created by Gurijala Sunil</p>
         </div>
-        <table class="styled-table">
+        <table class="styled-table" role="table" aria-label="Playlist summary">
           <thead>
             <tr>
-              <th>Year</th>
-              <th>Music</th>
+              <th scope="col">Year</th>
+              <th scope="col">Music</th>
             </tr>
           </thead>
           <tbody>
@@ -56,173 +62,278 @@
           </tbody>
         </table>
       </div>
-      <div class="track-list">
-        <div class="track-list-header">
+      <div class="track-list" role="region" aria-label="Track List">
+        <div class="track-list-header" role="row">
           <h2>Tracks</h2>
           <span>Duration</span>
         </div>
-        <div class="track-item">
-          <div class="play-button">▶</div>
+        <div
+          class="track-item"
+          role="button"
+          tabindex="0"
+          aria-label="Play Sunflower by Post Malone, Swae Lee"
+        >
+          <div class="play-button" aria-hidden="true">▶</div>
           <div class="track-details">
             <h3>Sunflower</h3>
             <p>Post Malone, Swae Lee</p>
           </div>
           <div class="track-duration">3:24</div>
         </div>
-        <div class="track-item">
-          <div class="play-button">▶</div>
+        <div
+          class="track-item"
+          role="button"
+          tabindex="0"
+          aria-label="Play Blinding Lights by The Weeknd"
+        >
+          <div class="play-button" aria-hidden="true">▶</div>
           <div class="track-details">
             <h3>Blinding Lights</h3>
-            <p>The Weekend</p>
+            <p>The Weeknd</p>
           </div>
           <div class="track-duration">3:20</div>
         </div>
-        <div class="track-item">
-          <div class="play-button">▶</div>
+        <div
+          class="track-item"
+          role="button"
+          tabindex="0"
+          aria-label="Play Dance Monkey by Tones and I"
+        >
+          <div class="play-button" aria-hidden="true">▶</div>
           <div class="track-details">
             <h3>Dance Monkey</h3>
             <p>Tones and I</p>
           </div>
           <div class="track-duration">3:29</div>
         </div>
-        <div class="track-item">
-          <div class="play-button">▶</div>
+        <div
+          class="track-item"
+          role="button"
+          tabindex="0"
+          aria-label="Play Watermelon Sugar by Harry Styles"
+        >
+          <div class="play-button" aria-hidden="true">▶</div>
           <div class="track-details">
             <h3>Watermelon Sugar</h3>
             <p>Harry Styles</p>
           </div>
           <div class="track-duration">2:54</div>
         </div>
-        <div class="track-item">
-          <div class="play-button">▶</div>
+        <div
+          class="track-item"
+          role="button"
+          tabindex="0"
+          aria-label="Play Levitating by Dua Lipa"
+        >
+          <div class="play-button" aria-hidden="true">▶</div>
           <div class="track-details">
             <h3>Levitating</h3>
             <p>Dua Lipa</p>
           </div>
           <div class="track-duration">3:23</div>
         </div>
-        <div class="track-item">
-          <div class="play-button">▶</div>
+        <div
+          class="track-item"
+          role="button"
+          tabindex="0"
+          aria-label="Play Bad Guy by Billie Eilish"
+        >
+          <div class="play-button" aria-hidden="true">▶</div>
           <div class="track-details">
             <h3>Bad Guy</h3>
             <p>Billie Eilish</p>
           </div>
           <div class="track-duration">3:14</div>
         </div>
-        <div class="track-item">
-          <div class="play-button">▶</div>
+        <div
+          class="track-item"
+          role="button"
+          tabindex="0"
+          aria-label="Play Shape of You by Ed Sheeran"
+        >
+          <div class="play-button" aria-hidden="true">▶</div>
           <div class="track-details">
             <h3>Shape of You</h3>
             <p>Ed Sheeran</p>
           </div>
           <div class="track-duration">3:53</div>
         </div>
-        <div class="track-item">
-          <div class="play-button">▶</div>
+        <div
+          class="track-item"
+          role="button"
+          tabindex="0"
+          aria-label="Play Can't Stop the Feeling by Justin Timberlake"
+        >
+          <div class="play-button" aria-hidden="true">▶</div>
           <div class="track-details">
             <h3>Can't Stop the Feeling!</h3>
             <p>Justin Timberlake</p>
           </div>
           <div class="track-duration">3:56</div>
         </div>
-        <div class="track-item">
-          <div class="play-button">▶</div>
+        <div
+          class="track-item"
+          role="button"
+          tabindex="0"
+          aria-label="Play Shake It Off by Taylor Swift"
+        >
+          <div class="play-button" aria-hidden="true">▶</div>
           <div class="track-details">
             <h3>Shake It Off</h3>
             <p>Taylor Swift</p>
           </div>
           <div class="track-duration">3:39</div>
         </div>
-        <div class="track-item">
-          <div class="play-button">▶</div>
+        <div
+          class="track-item"
+          role="button"
+          tabindex="0"
+          aria-label="Play Uptown Funk by Mark Ronson ft. Bruno Mars"
+        >
+          <div class="play-button" aria-hidden="true">▶</div>
           <div class="track-details">
             <h3>Uptown Funk</h3>
             <p>Mark Ronson ft. Bruno Mars</p>
           </div>
           <div class="track-duration">4:30</div>
         </div>
-        <div class="track-item">
-          <div class="play-button">▶</div>
+        <div
+          class="track-item"
+          role="button"
+          tabindex="0"
+          aria-label="Play I Wanna Dance with Somebody by Whitney Houston"
+        >
+          <div class="play-button" aria-hidden="true">▶</div>
           <div class="track-details">
             <h3>I Wanna Dance with Somebody</h3>
             <p>Whitney Houston</p>
           </div>
           <div class="track-duration">4:51</div>
         </div>
-        <div class="track-item">
-          <div class="play-button">▶</div>
+        <div
+          class="track-item"
+          role="button"
+          tabindex="0"
+          aria-label="Play Happy by Pharrell Williams"
+        >
+          <div class="play-button" aria-hidden="true">▶</div>
           <div class="track-details">
             <h3>Happy</h3>
             <p>Pharrell Williams</p>
           </div>
           <div class="track-duration">3:53</div>
         </div>
-        <div class="track-item">
-          <div class="play-button">▶</div>
+        <div
+          class="track-item"
+          role="button"
+          tabindex="0"
+          aria-label="Play Shut Up and Dance by Walk the Moon"
+        >
+          <div class="play-button" aria-hidden="true">▶</div>
           <div class="track-details">
             <h3>Shut Up and Dance</h3>
             <p>Walk the Moon</p>
           </div>
           <div class="track-duration">3:17</div>
         </div>
-        <div class="track-item">
-          <div class="play-button">▶</div>
+        <div
+          class="track-item"
+          role="button"
+          tabindex="0"
+          aria-label="Play Can't Feel My Face by The Weeknd"
+        >
+          <div class="play-button" aria-hidden="true">▶</div>
           <div class="track-details">
             <h3>Can't Feel My Face</h3>
             <p>The Weeknd</p>
           </div>
           <div class="track-duration">3:36</div>
         </div>
-        <div class="track-item">
-          <div class="play-button">▶</div>
+        <div
+          class="track-item"
+          role="button"
+          tabindex="0"
+          aria-label="Play Havana by Camila Cabello ft. Young Thug"
+        >
+          <div class="play-button" aria-hidden="true">▶</div>
           <div class="track-details">
             <h3>Havana</h3>
             <p>Camila Cabello ft. Young Thug</p>
           </div>
           <div class="track-duration">3:36</div>
         </div>
-        <div class="track-item">
-          <div class="play-button">▶</div>
+        <div
+          class="track-item"
+          role="button"
+          tabindex="0"
+          aria-label="Play Sugar by Maroon 5"
+        >
+          <div class="play-button" aria-hidden="true">▶</div>
           <div class="track-details">
             <h3>Sugar</h3>
             <p>Maroon 5</p>
           </div>
           <div class="track-duration">3:55</div>
         </div>
-        <div class="track-item">
-          <div class="play-button">▶</div>
+        <div
+          class="track-item"
+          role="button"
+          tabindex="0"
+          aria-label="Play Old Town Road by Lil Nas X ft. Billy Ray Cyrus"
+        >
+          <div class="play-button" aria-hidden="true">▶</div>
           <div class="track-details">
             <h3>Old Town Road</h3>
             <p>Lil Nas X ft. Billy Ray Cyrus</p>
           </div>
           <div class="track-duration">2:37</div>
         </div>
-        <div class="track-item">
-          <div class="play-button">▶</div>
+        <div
+          class="track-item"
+          role="button"
+          tabindex="0"
+          aria-label="Play Love On Top by Beyoncé"
+        >
+          <div class="play-button" aria-hidden="true">▶</div>
           <div class="track-details">
             <h3>Love On Top</h3>
             <p>Beyoncé</p>
           </div>
           <div class="track-duration">4:25</div>
         </div>
-        <div class="track-item">
-          <div class="play-button">▶</div>
+        <div
+          class="track-item"
+          role="button"
+          tabindex="0"
+          aria-label="Play High Horse by Kacey Musgraves"
+        >
+          <div class="play-button" aria-hidden="true">▶</div>
           <div class="track-details">
             <h3>High Horse</h3>
             <p>Kacey Musgraves</p>
           </div>
           <div class="track-duration">3:34</div>
         </div>
-        <div class="track-item">
-          <div class="play-button">▶</div>
+        <div
+          class="track-item"
+          role="button"
+          tabindex="0"
+          aria-label="Play One Kiss by Calvin Harris, Dua Lipa"
+        >
+          <div class="play-button" aria-hidden="true">▶</div>
           <div class="track-details">
             <h3>One Kiss</h3>
             <p>Calvin Harris, Dua Lipa</p>
           </div>
           <div class="track-duration">3:42</div>
         </div>
-        <div class="track-item">
-          <div class="play-button">▶</div>
+        <div
+          class="track-item"
+          role="button"
+          tabindex="0"
+          aria-label="Play Thunder by Imagine Dragons"
+        >
+          <div class="play-button" aria-hidden="true">▶</div>
           <div class="track-details">
             <h3>Thunder</h3>
             <p>Imagine Dragons</p>
@@ -231,17 +342,16 @@
         </div>
       </div>
     </div>
-
-    <div class="playback-controls">
+    <div class="playback-controls" role="region" aria-label="Playback Controls">
       <div class="control-buttons">
-        <button>◀◀</button>
-        <button>◀</button>
-        <button class="play-pause">▶</button>
-        <button>▶</button>
-        <button>▶▶</button>
+        <button aria-label="Previous track">◀◀</button>
+        <button aria-label="Rewind">◀</button>
+        <button class="play-pause" aria-label="Play/Pause">▶</button>
+        <button aria-label="Forward">▶</button>
+        <button aria-label="Next track">▶▶</button>
       </div>
     </div>
-    <footer class="footer" aria-label="Footer">
+    <footer class="footer" role="contentinfo">
       <p>&copy; 2024 Group4 Gurijala Sunil</p>
     </footer>
   </body>

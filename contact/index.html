@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,50 +13,51 @@
     <link rel="stylesheet" href="./login.css">
     <link rel="stylesheet" href="./navbar/navbar.css">
 </head>
+
 <body>
-    <header class="header">
-    <div class="logo">BEAT<span class="highlight">VIBES</span></div>
-    <nav class="nav">
-      <a href="../home/home.html">Home</a>
-      <a href="../shop/shop.html" >Shop</a>
-      <a href="../listen/index.html">Listen</a>
-      <a href="contact.html">Contact</a>
-      <a href="index.html" style="color:rgb(235, 97, 120)">Login</a>
-    </nav>
-    <div class="search">
-      <input type="text" placeholder="Start searching...">
-      <button>Search</button>
-    </div>
-  </header>
-<main class="main">
-        <section class="login-form-section">
-           
-            <form class="login-form">
+    <header class="header" role="banner">
+        <div class="logo" role="heading" aria-level="1">BEAT<span class="highlight">VIBES</span></div>
+        <nav class="nav" role="navigation">
+            <a href="../home/home.html" role="link">Home</a>
+            <a href="../shop/shop.html" role="link">Shop</a>
+            <a href="../listen/index.html" role="link">Listen</a>
+            <a href="contact.html" role="link">Contact</a>
+            <a href="index.html" style="color:rgb(235, 97, 120)" role="link" aria-current="page">Login</a>
+        </nav>
+        <div class="search" role="search">
+            <input type="text" placeholder="Start searching..." aria-label="Search input">
+            <button aria-label="Search button">Search</button>
+        </div>
+    </header>
+    <main class="main" role="main">
+        <section class="login-form-section" aria-labelledby="login-form">
+            <h2 id="login-form">Login</h2>
+            <form class="login-form" aria-labelledby="login-form">
                 <div class="field-container">
                     <label for="username">Username:</label>
-                    <input type="text"required>
+                    <input type="text" id="username" required aria-required="true" aria-label="Enter your username">
                 </div>
                 <div class="field-container">
                     <label for="password">Password:</label>
-                    <input type="password" required>
+                    <input type="password" id="password" required aria-required="true" aria-label="Enter your password">
                 </div>
- 
                 <div class="auth-links">
-                    <a href="" class="forgot-password">Forgot Password?</a>
+                    <a href="#" class="forgot-password" role="link">Forgot Password?</a>
                 </div>
- 
                 <div class="btn-container">
-                    <button class="sign-in-btn" type="submit">Signin</button>
+                    <button class="sign-in-btn" type="submit" aria-label="Sign in button">Signin</button>
                 </div>
-                <p class="register">You don't have an account? <br> <a href="">please register</a></p>
+                <p class="register">You don't have an account? <br> <a href="#" role="link">please register</a></p>
             </form>
         </section>
-        <section class="tech-img-section">
+        <section class="tech-img-section" aria-hidden="true">
             <img src="./images/pexels-vishnurnair-1105666.jpg" alt="Music-page">
         </section>
     </main>
-    <footer class="footer">
+
+    <footer class="footer" role="contentinfo">
         <p>&copy; 2024 Dharanya...</p>
     </footer>
 </body>
+
 </html>

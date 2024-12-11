@@ -305,7 +305,16 @@ p {
   background-color: #ff6490;
 }
 
+.map-part img {
+  width: 280px;
+  height: 200px;
+}
 
+#map {
+  width: 250px;
+  height: 200px;
+  border: 1px solid #ccc;
+}
 
 /* Footer */
 .footer {
